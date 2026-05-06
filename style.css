@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    padding-top: 80px;
+}
+
+/* Navbar layout */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;      
+  padding: 8px 20px;        
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 65px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+/* Logo container (text + image) */
+.logo-container {
+  display: flex;
+  align-items: center;       /* aligns text and image neatly */
+  gap: 8px;                 /* space between logo text and image */
+  margin-right: 40px;        /* push menu closer to logo */
+}
+
+.logo-text {
+  font-size: 27px;
+  font-weight: 550;
+  color: #fff;
+}
+
+.logo-image {
+  height: 75px;              /* adjust size to fit nicely */
+  width: auto;
+}
+
+.menu{
+    margin-left: auto;
+    float: left;
+}
+
+.menu ul {
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul li{
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 550;
+  transition: 0.4s ease-in-out;
+}
+
+.menu ul li a:hover {
+  color: #800020;               /* hover effect */
+}
+
+.search{
+    width: 330px;
+    float: right;
+    margin-left: 100px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid #fff;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 80px;
+    height: 30px;
+    background: #800020;
+    border: 2px solid #800020;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 14px;
+    vertical-align: middle;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 15px;
+    padding-bottom: 25px;
+    font-family: 'Times New Roman';
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #800020;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #fff;
+    transition: 3s ease;
+}
+
+.cn:hover{
+    background-color: palevioletred;
+}
+
+.content span{
+    color: gold;
+    font-size: 50px;
+}
+
+.form{
+    width: 300px;
+    height: 420px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%),rgba(0,0,0,0.8)50%;
+    position: absolute;
+    top: -20px;
+    left: 830px;
+    margin-top: 60px;
+    border-radius: 50px;
+    padding: 25px;
+    padding-bottom: 50px;
+}
+
+.form h2{
+    width: 220px;
+    font-family:  sans-serif;
+    text-align: center;
+    color: #800020;
+    font-size: 22px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #800020;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #800020;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btnn:hover{
+    background: #fff;
+    color: #800020;
+}
+
+.btnn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: #800020;
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    margin-right: 15px;
+    transition: o.3 ease;
+}
+
+.icons ion-icon:hover{
+    color: #800020;
+}
